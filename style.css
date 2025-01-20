@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #cfcaca;
+    background: #801c1c;
+  }
+  
+  h1, h2, h3 {
+    color: #81b8ee;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Section */
+  header {
+    background: url('./bk\ gala.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  header .header-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  header h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  header .event-date {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f39c12;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 2s ease-in-out;
+  }
+  
+  .animate-zoom-in {
+    animation: zoom-in 1.5s ease-in-out;
+  }
+  
+  /* Event Details Section */
+  #details {
+    padding: 40px 20px;
+    text-align: center;
+    background: #690909;
+  }
+  
+  .details-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .detail {
+    background: #566388;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Carousel */
+  #highlights {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-item {
+    min-width: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-item p {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* RSVP Section */
+  #rsvp {
+    padding: 40px 20px;
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+  }
+  
+  #rsvp form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  #rsvp form input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #rsvp form button {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #rsvp form button:hover {
+    background: #d35400;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
